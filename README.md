@@ -148,13 +148,16 @@ the evidence bar, not superficial coverage of everything.
 
 ### Key trade-offs
 
-- **SQLite over Google Sheets.** Sheets would have been more immediately
-  legible to a non-technical reviewer — open it, see the state, no SQL
-  client needed. Chose SQLite instead for foreign keys, an append-only
-  audit trail (`draft_events`), and validated state transitions
-  (`ALLOWED_TRANSITIONS`). Those are what make "safe and auditable" an
-  actual property of the system rather than a claim in a README — a
-  spreadsheet can't give you that without real extra plumbing on top.
+- **SQLite for the backend, never for anything human-facing.** SQLite and
+  the human-facing delivery surface were always two separate decisions, not
+  competing options. One keeps the data correct — transactions, an
+  append-only audit trail (`draft_events`), validated state changes
+  (`ALLOWED_TRANSITIONS`). The other is whatever reps and ops actually look
+  at, built as a layer on top, and that always depended on Easol's real
+  ecosystem — which I didn't know at build time. Now that it's confirmed as
+  Google Workspace, the natural human-facing layer is a Google Sheet
+  reading from the same SQLite backend; `dashboard.html` in this build is
+  the stand-in for that.
 - **A shared research dossier, not two fully independent research calls.**
   The original design ran separate research for every message and every
   briefing, on the reasoning that a message and a briefing have different
@@ -185,12 +188,12 @@ the evidence bar, not superficial coverage of everything.
   those use cases genuinely fit Easol, rather than treating "it has an
   MCP server" as justification on its own.
 - **The actual end-user experience, and not just Slack or Anvil** — those
-  were working assumptions, not a confirmed answer. Where this actually
-  belongs depends entirely on Easol's real ecosystem — it could just as
-  easily mean Google Drive/Workspace or Microsoft/Outlook/Teams if that's
-  where reps and ops genuinely live day to day. I don't have that
-  information, so I'd want to learn it before committing to a surface
-  rather than assume Slack because it was the most obvious default.
+  were working assumptions during the build, not confirmed. I've since
+  learned Easol runs on Google Workspace, which answers the broad ecosystem
+  question but not the specific one — whether that means a live Sheet, a
+  Doc, or something else, and exactly where this should show up in a rep's
+  day, still needs learning directly from how reps and ops actually work,
+  not assumed from the platform alone.
 - **The depth of the feedback loop, not just its presence** — what's built
   captures a lightweight, structured signal per draft (approve/edit/reject,
   a reason code on reject, an edit diff). That's real, but it's a thin
