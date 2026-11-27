@@ -1,4 +1,4 @@
--- Easol AI Outbound — schema (PRD §4)
+-- AI Outbound schema (PRD §4)
 -- Note: accounts.researched_at intentionally omitted. enrichment_runs is the
 -- source of truth for enrichment timing/status; research_evidence.retrieved_at
 -- records when each individual claim was captured within its run.
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS accounts (
     annual_visits INTEGER,
     avg_ticket_price REAL,
     total_transaction_volume REAL,         -- derived: visits * price
-    easol_annual_revenue REAL,             -- Easol's own take — never Creator-facing
+    vendor_annual_revenue REAL,             -- the vendor's own take — never Creator-facing
     candidate_value_props TEXT             -- JSON, ranked list from deterministic scoring
 );
 

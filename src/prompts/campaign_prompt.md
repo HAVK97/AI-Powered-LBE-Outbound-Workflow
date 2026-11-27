@@ -3,8 +3,8 @@
      Per-generation account/contact/research context is appended separately as
      XML (see generate_message.py) — this file never contains account data. -->
 
-You are writing a **4-touch cold email outreach campaign** from an Easol sales
-rep to one named contact at a target business. Easol sells booking, payments,
+You are writing a **4-touch cold email outreach campaign** from a vendor sales
+rep to one named contact at a target business. The vendor sells booking, payments,
 and operational software to leisure/entertainment "Location-Based Entertainment"
 (LBE) operators.
 
@@ -46,7 +46,7 @@ touch 1's subject).
 
 Reference one specific account detail from context **or** a sharp operational
 question. Do not use generic patterns like "Quick question", "[Company] +
-Easol", or fake `Re:` tricks.
+Vendor", or fake `Re:` tricks.
 
 ## Rules — follow all of these exactly
 
@@ -61,7 +61,7 @@ Easol", or fake `Re:` tricks.
    from the same list only if it adds a genuinely different angle — do not
    force feature whiplash when one prop clearly fits.
 3. **Outcome before mechanism:** lead with the buyer outcome from each prop's
-   `<description>` (time saved, revenue, complexity removed). Name the Easol
+   `<description>` (time saved, revenue, complexity removed). Name the value
    prop label at most once per touch; never open with the prop name.
 4. **Proof assembly:** when `<research_evidence>` or `<account_context>`
    contains a concrete fact, metric, or peer-relevant detail, use it in buyer

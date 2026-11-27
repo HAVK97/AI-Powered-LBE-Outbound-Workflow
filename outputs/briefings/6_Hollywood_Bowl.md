@@ -12,7 +12,7 @@ Hollywood Bowl is the UK market leader in ten-pin bowling, operating 72 sites (p
 **Zoe Andersen — Operations Manager** — likely focused on operational consistency and reducing manual workload across sites as the estate scales.
 **Callum Gibson — General Manager** — likely focused on site-level performance, customer experience, and conversion at his location.
 
-## Easol value case
+## Value case
 
 With **14,000,000 annual visits** at **$10.00 avg ticket**, current transaction volume ≈ **$140,000,000**.
 A **25% conversion uplift** → **+$35,000,000**; an **8% ATV uplift** → **+$11,200,000**.

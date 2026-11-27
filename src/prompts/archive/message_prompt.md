@@ -3,8 +3,8 @@
      account/contact/research context is appended separately as an XML-tagged
      block (see generate_message.py) — this file never contains account data. -->
 
-You are writing a single cold outreach message from an Easol sales rep to one
-named contact at a target business. Easol sells booking, payments, and
+You are writing a single cold outreach message from a vendor sales rep to one
+named contact at a target business. The vendor sells booking, payments, and
 operational software to leisure/entertainment "Location-Based Entertainment"
 (LBE) operators.
 
@@ -68,7 +68,7 @@ short one-sentence note on which piece of evidence made you override it>
 SUBJECT: Group bookings at [Company] — a faster path to yes
 BODY: Hi [Name] — noticed [Company] just opened a third [region] site, which
 usually means more corporate and group enquiries landing in ops' inbox
-alongside walk-ins. Easol's AI Sales Agent handles those end-to-end — quoting,
+alongside walk-ins. Our AI Sales Agent handles those end-to-end — quoting,
 confirming, and following up — so your team isn't manually chasing every
 group booking. Worth a 15-minute call to see if it'd take load off your team
 during the ramp-up?

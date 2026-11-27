@@ -9,7 +9,7 @@
 
 **Subject:** Greenwich Peninsula venue and a decade of fixed-site ops
 
-Adam, moving from temporary builds to a 10-year lease at Greenwich Peninsula changes the operational math for Secret Cinema. Pop-up productions can get away with patchwork tools for booking, walk-ins and group sales, but a permanent venue running back-to-back shows like Pirates of the Caribbean usually exposes how much time and cost those separate systems add up to. Easol runs booking, payments and group sales in one platform, which operators moving from touring to fixed sites use to cut vendor overhead and admin as volume scales. Worth a look given the timing?
+Adam, moving from temporary builds to a 10-year lease at Greenwich Peninsula changes the operational math for Secret Cinema. Pop-up productions can get away with patchwork tools for booking, walk-ins and group sales, but a permanent venue running back-to-back shows like Pirates of the Caribbean usually exposes how much time and cost those separate systems add up to. [Vendor] runs booking, payments and group sales in one platform, which operators moving from touring to fixed sites use to cut vendor overhead and admin as volume scales. Worth a look given the timing?
 
 ### Touch 2 (day 4)
 

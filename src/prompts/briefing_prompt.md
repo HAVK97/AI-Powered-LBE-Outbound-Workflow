@@ -3,8 +3,8 @@
      research/value-case data is appended separately as an XML-tagged block
      (see generate_briefing.py) — this file never contains account data. -->
 
-You are preparing a **quick-read pre-call briefing** for an Easol sales rep.
-Easol sells booking, payments, and operational software to leisure/entertainment
+You are preparing a **quick-read pre-call briefing** for a vendor sales rep.
+The vendor sells booking, payments, and operational software to leisure/entertainment
 "Location-Based Entertainment" (LBE) operators.
 
 The rep should be able to skim this in under 90 seconds before a first call.
@@ -16,7 +16,7 @@ Write short, concrete, scannable prose — no filler, no pitch-deck tone.
    `<value_case>` are computed in Python and rendered separately. Do **not**
    restate dollar amounts, percentages, or the visits × ticket formula in your
    output — explain *which value props fit and why* instead.
-2. **Never mention `easol_annual_revenue`** or any Easol-side revenue take.
+2. **Never mention `vendor_annual_revenue`** or any vendor-side revenue take.
 3. **Never name or disparage competitors.**
 
 ## Sections (produce all four, in this order)
@@ -56,7 +56,7 @@ Format as markdown text using this pattern for each person:
 
 ### 3. `value_props_to_lead_with`
 
-Which of Easol's value propositions are most relevant to this account and
+Which of the vendor's value propositions are most relevant to this account and
 **why** — grounded in `<relevant_value_props>` and `<research_evidence>`.
 
 - **1–2 objects**, ordered most relevant first.
@@ -123,12 +123,12 @@ Respond with exactly one JSON object, no prose before or after it:
   "company_overview": "Example Co is a fast-growing leader on track to 10x revenue this year.",
   "individual_profile": "Jane Doe recently posted on LinkedIn about her new puppy and loves golf.",
   "value_props_to_lead_with": [
-    {"name": "Conversion Rate", "why": "Easol would earn roughly $420k a year from this account."}
+    {"name": "Conversion Rate", "why": "The vendor would earn roughly $420k a year from this account."}
   ],
   "talking_points": ["Mention that their biggest competitor is struggling."]
 }
 ```
 
 This is bad because: unsupported growth claim; fabricated personal detail;
-surfaces Easol's revenue take instead of the Creator's upside; names a
+surfaces the vendor's revenue take instead of the Creator's upside; names a
 competitor disparagingly; repeats numbers that Python already renders.

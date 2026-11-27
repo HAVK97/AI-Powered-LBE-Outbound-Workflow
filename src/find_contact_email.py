@@ -71,7 +71,7 @@ def ensure_schema(conn: sqlite3.Connection) -> None:
     """Idempotent migration for contact_enrichment_runs + contacts.resolved_email.
 
     schema.sql already covers a fresh database; this covers upgrading an
-    existing db/easol.db created before this table existed. Safe to call on
+    existing db/outbound.db created before this table existed. Safe to call on
     every invocation of this module, same pattern as research.ensure_schema().
     """
     conn.execute(

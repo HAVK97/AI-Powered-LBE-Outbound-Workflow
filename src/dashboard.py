@@ -599,11 +599,11 @@ def render_dashboard(db_path: str = str(DB_PATH), out_path: str = str(OUTPUT_PAT
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Easol AI Outbound — Pilot Dashboard</title>
+<title>AI Outbound Pilot Dashboard</title>
 <style>{CSS}</style>
 </head>
 <body>
-<h1>Easol AI Outbound — Pilot Dashboard</h1>
+<h1>AI Outbound Pilot Dashboard</h1>
 <p class="subtitle">Research &rarr; Generate &rarr; Review &rarr; Send</p>
 <p class="meta">
   Static export generated {generated_at} · Read-only presentation view.<br>
