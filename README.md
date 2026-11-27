@@ -1,4 +1,4 @@
-# Easol AI-Powered LBE Outbound Workflow
+# AI-Powered LBE Outbound Workflow
 
 Structured around what the brief actually asks for: working outputs, the
 workflow itself, and the thinking behind it. Full spec in [`PRD.md`](PRD.md).
