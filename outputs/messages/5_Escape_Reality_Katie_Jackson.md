@@ -9,7 +9,7 @@
 
 **Subject:** Group bookings across 10 Escape Reality sites
 
-Hi Katie, with 36-person capacity rooms and a dedicated bar for private events at Leicester, plus corporate team events promoted at Edinburgh, I'd guess a decent chunk of your 450k annual visits comes through group and party bookings rather than single-ticket purchases. Those bookings often mean more back-and-forth, split payments, and manual follow-up before they confirm. Easol's booking flow supports group split pay and payment plans at checkout, which typically lifts conversion around 25% versus a standard single-payment flow. Worth exploring for how Escape Reality handles group and corporate bookings today?
+Hi Katie, with 36-person capacity rooms and a dedicated bar for private events at Leicester, plus corporate team events promoted at Edinburgh, I'd guess a decent chunk of your 450k annual visits comes through group and party bookings rather than single-ticket purchases. Those bookings often mean more back-and-forth, split payments, and manual follow-up before they confirm. [Vendor]'s booking flow supports group split pay and payment plans at checkout, which typically lifts conversion around 25% versus a standard single-payment flow. Worth exploring for how Escape Reality handles group and corporate bookings today?
 
 ### Touch 2 (day 4)
 

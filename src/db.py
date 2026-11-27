@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Callable, Iterable, TypeVar
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = REPO_ROOT / "db" / "easol.db"
+DB_PATH = REPO_ROOT / "db" / "outbound.db"
 
 
 def get_connection(db_path=DB_PATH) -> sqlite3.Connection:
@@ -24,7 +24,7 @@ def get_connection(db_path=DB_PATH) -> sqlite3.Connection:
 
 def add_column_if_missing(conn: sqlite3.Connection, table: str, column: str, ddl_type: str) -> None:
     """Idempotent ALTER TABLE, used by every module's ensure_schema() to
-    upgrade a pre-existing db/easol.db created before a given column existed.
+    upgrade a pre-existing db/outbound.db created before a given column existed.
     """
     existing = {row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
     if column not in existing:

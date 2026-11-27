@@ -12,7 +12,7 @@ Secret Cinema is a UK-based immersive cinema and theatre producer, historically 
 **Adam Grant — Head of Finance**
 - Likely priorities: cost control and system consolidation as the business shifts from touring pop-ups to long-term leased venues, where predictable, scalable operations matter more than ever.
 
-## Easol value case
+## Value case
 
 With **500,000 annual visits** at **$40.00 avg ticket**, current transaction volume ≈ **$20,000,000**.
 A **25% conversion uplift** → **+$5,000,000**; an **8% ATV uplift** → **+$1,600,000**.

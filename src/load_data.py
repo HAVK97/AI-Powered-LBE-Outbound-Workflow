@@ -83,7 +83,12 @@ def load_csv(csv_path: str, db_path: str, *, reset: bool = False) -> None:
     # Migrate legacy DBs first: schema.sql CREATE TABLE IF NOT EXISTS won't
     # ALTER existing tables, but its CREATE INDEX ... (enrichment_run_id) will
     # fail if those columns are missing. ensure_schema adds them idempotently.
-    ensure_schema(conn)
+    # A fresh database has nothing to migrate, so skip straight to schema.sql.
+    is_existing_db = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'research_evidence'"
+    ).fetchone()
+    if is_existing_db:
+        ensure_schema(conn)
     with open(SCHEMA_PATH, "r", encoding="utf-8") as f:
         conn.executescript(f.read())
 
@@ -114,14 +119,14 @@ def load_csv(csv_path: str, db_path: str, *, reset: bool = False) -> None:
             annual_visits = _to_int(row["Est. Annual Visits"])
             avg_ticket_price = _to_float(row["Est. Avg Ticket Price ($)"])
             total_transaction_volume = _to_float(row["Est. Total Transaction Volume ($)"])
-            easol_annual_revenue = _to_float(row["Est. Easol Annual Revenue ($)"])
+            vendor_annual_revenue = _to_float(row["Est. Vendor Annual Revenue ($)"])
             conn.execute(
                 """
                 INSERT OR REPLACE INTO accounts (
                     account_id, account_name, category, sub_category, description,
                     hq_location, region, sites, is_touring_business,
                     annual_visits, avg_ticket_price, total_transaction_volume,
-                    easol_annual_revenue, candidate_value_props
+                    vendor_annual_revenue, candidate_value_props
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NULL)
                 """,
                 (
@@ -137,7 +142,7 @@ def load_csv(csv_path: str, db_path: str, *, reset: bool = False) -> None:
                     annual_visits,
                     avg_ticket_price,
                     total_transaction_volume,
-                    easol_annual_revenue,
+                    vendor_annual_revenue,
                 ),
             )
             accounts_inserted += 1

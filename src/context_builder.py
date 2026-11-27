@@ -163,7 +163,7 @@ def role_default_props(contact_category: str, candidate_value_props: list[str]) 
 
 def compute_value_case(account: dict) -> dict:
     """§8 — value-case figures. Python calculates, the model only narrates.
-    easol_annual_revenue is deliberately excluded: it's Easol's own take, never
+    vendor_annual_revenue is deliberately excluded: it's the vendor's own take, never
     Creator-facing output. annual_visits / avg_ticket_price are included so
     render can show the brief's visits × ticket formula without model math.
     """

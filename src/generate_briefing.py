@@ -172,7 +172,7 @@ def check_briefing_guardrails(parsed: dict) -> list[str]:
 
 
 def render_briefing_markdown(parsed: dict, value_case: dict) -> str:
-    # easol_annual_revenue is Easol take — never Creator-facing (§8)
+    # vendor_annual_revenue is the vendor's take — never Creator-facing (§8)
     visits = value_case["annual_visits"]
     ticket = value_case["avg_ticket_price"]
     volume = value_case["current_transaction_volume"]
@@ -192,7 +192,7 @@ def render_briefing_markdown(parsed: dict, value_case: dict) -> str:
 
 {parsed["individual_profile"]}
 
-## Easol value case
+## Value case
 
 With **{visits:,.0f} annual visits** at **${ticket:,.2f} avg ticket**, current transaction volume ≈ **${volume:,.0f}**.
 A **25% conversion uplift** → **+${conv:,.0f}**; an **8% ATV uplift** → **+${atv:,.0f}**.

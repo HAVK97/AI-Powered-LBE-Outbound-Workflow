@@ -78,7 +78,7 @@ def ensure_schema(conn: sqlite3.Connection) -> None:
     """Idempotent migration for enrichment_runs + enrichment_run_id columns.
 
     schema.sql already covers a fresh database; this covers upgrading an
-    existing db/easol.db created before this table existed. Safe to call on
+    existing db/outbound.db created before this table existed. Safe to call on
     every startup of enrich/generate/dashboard.
     """
     conn.execute(
